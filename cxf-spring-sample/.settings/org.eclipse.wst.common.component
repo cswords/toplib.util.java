@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="cxf-spring-sample">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <dependent-module archiveName="maven-dependency-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dependency-sample/dependency-sample">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="toplib-util-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/toplib-util/toplib-util">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/cxf-spring-sample/target/WEB-INF"/>
+        <property name="component.exclusion.patterns" value="**/maven-archiver/**,**/test-classes/**,**/m2e-wtp/**"/>
+        <property name="context-root" value="cxf-spring"/>
+    </wb-module>
+</project-modules>
