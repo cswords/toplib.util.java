@@ -1,14 +1,21 @@
 package toplib.test;
 
+import java.util.List;
+
 public class TestBean {
 
 	private String stringProp;
 
+	@SuppressWarnings("unused")
 	private int intProp;
 
 	private boolean boolProp;
 	
 	private String name;
+	
+	private List<Integer> intListProp; 
+	
+	private List<TestBean> beanListProp;
 
 	public boolean isBoolProp() {
 		return boolProp;
@@ -32,6 +39,22 @@ public class TestBean {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public List<Integer> getIntListProp() {
+		return intListProp;
+	}
+
+	public void setIntListProp(List<Integer> intListProp) {
+		this.intListProp = intListProp;
+	}
+
+	public List<TestBean> getBeanListProp() {
+		return beanListProp;
+	}
+
+	public void setBeanListProp(List<TestBean> beanListProp) {
+		this.beanListProp = beanListProp;
 	}
 	
 }
